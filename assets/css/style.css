@@ -2205,4 +2205,16 @@ summary::-webkit-details-marker {
 
 .timeline-text {
   max-width: 700px;
+  cursor: auto
+}
+
+.skills-row {
+  display: flex;
+  gap: 2rem; /* spacing between columns */
+  cursor: auto
+}
+
+.skill-column {
+  flex: 1; /* each column takes equal width */
+  cursor: auto
 }
