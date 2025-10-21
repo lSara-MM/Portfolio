@@ -441,8 +441,9 @@ main {
 .contact-item {
   min-width: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 16px;
+  align-items: flex-start;
 }
 
 .contact-info {
@@ -464,6 +465,14 @@ main {
 
 .contact-info address {
   font-style: normal;
+}
+
+.contact-info .relocation {
+  margin-top: 4px;
+  font-size: var(--fs-8);
+  font-style: normal;
+  font-weight: 200;
+  color: var(--white-2);
 }
 
 .social-list {
@@ -2211,7 +2220,12 @@ summary::-webkit-details-marker {
 .skills-row {
   display: flex;
   gap: 2rem; /* spacing between columns */
-  cursor: auto
+  cursor: auto;
+  justify-content: center;
+}
+
+.skills-row.small-gap {
+  gap: 1rem;
 }
 
 .skill-column {
