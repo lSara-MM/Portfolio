@@ -1070,6 +1070,25 @@ main {
   width: 100%;
 }
 
+.featured-project {
+  grid-column: 1 / -1;
+}
+
+.featured-project>a {
+  display: block;
+  padding: 14px;
+  border: 1px solid var(--jet);
+  border-radius: 18px;
+  background: var(--eerie-black-2);
+  transition: var(--transition-1);
+}
+
+.featured-project>a:hover,
+.featured-project>a:focus-visible {
+  border-color: var(--orange-yellow-crayola);
+  transform: translateY(-4px);
+}
+
 .project-img {
   position: relative;
   width: 100%;
@@ -1128,12 +1147,54 @@ main {
   transition: var(--transition-1);
 }
 
+.gdextension-preview {
+  display: flex;
+  min-height: 190px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  color: var(--white-2);
+  background:
+    radial-gradient(circle at 80% 20%, hsla(45, 100%, 72%, 0.25), transparent 26%),
+    linear-gradient(135deg, hsl(240, 4%, 16%), hsl(240, 3%, 10%));
+}
+
+.gdextension-preview strong {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.gdextension-preview__eyebrow,
+.gdextension-preview__nodes,
+.project-featured-label,
+.project-meta,
+.project-cta {
+  font-size: var(--fs-7);
+}
+
+.gdextension-preview__eyebrow,
+.project-featured-label {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.gdextension-preview__nodes,
+.project-meta {
+  color: var(--light-gray-70);
+}
+
 .project-item>a:hover img {
   transform: scale(1.1);
 }
 
 .project-title,
-.project-category {
+.project-category,
+.project-featured-label,
+.project-meta,
+.project-cta {
   margin-left: 10px;
 }
 
@@ -1149,6 +1210,33 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.project-featured-label {
+  margin-top: 14px;
+}
+
+.project-meta {
+  margin-top: 5px;
+  color: var(--orange-yellow-crayola);
+}
+
+.project-cta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 12px;
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+}
+
+.project-cta ion-icon {
+  transition: var(--transition-1);
+}
+
+.featured-project>a:hover .project-cta ion-icon,
+.featured-project>a:focus-visible .project-cta ion-icon {
+  transform: translateX(4px);
 }
 
 
