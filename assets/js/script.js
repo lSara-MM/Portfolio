@@ -102,13 +102,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
-
-// ---------------------------------------------------------------------------
-// PROJECT PRIORITY — edit this list to choose which projects appear first.
-// Order = priority. The first visible project is shown as the large featured card.
-// Use the start of the project title (not case sensitive). Unlisted projects go last.
-// ---------------------------------------------------------------------------
 const PROJECT_PRIORITY = [
   "GDExtAbilities",
   "Pinky Engine",
@@ -147,7 +140,6 @@ const imageLightbox = document.querySelector("[data-image-lightbox]");
 const imageLightboxImage = document.querySelector("[data-image-lightbox-image]");
 const imageLightboxClose = document.querySelector("[data-image-lightbox-close]");
 const projectGalleries = new Map();
-// Change these two icon names to customise the gallery indicators.
 const GALLERY_DOT_ICON = "ellipse-outline";
 const ACTIVE_GALLERY_DOT_ICON = "radio-button-on-outline";
 let activeProjectIndex = 0;
